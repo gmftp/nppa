@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NPPA Marketing System</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #f1f5f9; font-family: Arial, sans-serif; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+  #fallback { position: fixed; right: 10px; bottom: 8px; font-size: 11px; z-index: 5; }
+  #fallback a { color: #64748b; }
+</style>
+</head>
+<body>
+  <!-- GANTI dengan alamat web app Apps Script Anda (yang berakhiran /exec) -->
+  <iframe id="app" title="NPPA Marketing System"
+          src="https://script.google.com/a/macros/unis.ac.id/s/AKfycbzspgl0A9l9QcIN4of9V4h9bNnVWxZT6nAtmgJqmiWVaf2H_fn2-CpQenk5W86aHma3WQ/exec"
+          allow="clipboard-write; fullscreen"></iframe>
+  <div id="fallback"><a id="direct" target="_blank" rel="noopener">Open directly</a></div>
+  <script>
+    document.getElementById('direct').href = document.getElementById('app').src;
+  </script>
+</body>
+</html>
